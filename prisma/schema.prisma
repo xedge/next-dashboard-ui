@@ -139,7 +139,12 @@ model Result {
   assignmentId Int?
 }
 
-// model Attendance{}
+model Attendance {
+  id      Int      @id @default(autoincrement())
+  date    DateTime
+  present Boolean
+}
+
 // model Event{}
 
 enum UserSex {
